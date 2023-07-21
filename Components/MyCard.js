@@ -66,7 +66,7 @@ const MyCard = () => {
   
   return (
     <div style={{height: '75vh', width: '75vw'}}>
-      <Card >
+      <Card style={{border:'3px solid rgb(32, 38, 46)'}}>
         <div className="flex items-center justify-center text-center flex-grow p-1" style={{borderColor: '#000000', borderBottom: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '5vh', padding: '0px'}}>
           <h1>TODO-APP</h1>
         </div>

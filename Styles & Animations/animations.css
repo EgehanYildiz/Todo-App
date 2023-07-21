@@ -3,7 +3,7 @@
 }
 
 @keyframes flash {
-    0%   {background-color: #323b35;}
+    0%   {background-color: rgb(32, 38, 46);}
     50%  {background-color: #ffffff4a;}
-    100% {background-color: #323b35;}
+    100% {background-color: rgb(32, 38, 46);}
 }
