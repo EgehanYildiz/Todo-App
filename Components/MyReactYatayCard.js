@@ -1,11 +1,6 @@
 import { Button } from 'primereact/button';
 
-const MyReactHorizontalCard = ({value, state, setState}) => {
-
-  const handleClick = (e) => {
-    const newArray = state.filter(item => item !== value);
-    setState(newArray);
-  }
+const MyReactHorizontalCard = ({value, removeTodos}) => {
 
   return (
     <div className="flex rounded" style={{ display: 'flex', justifyContent: 'space-between', backgroundColor: '#323b35', border: '1px solid #fafafa', borderRadius: '0.25rem', margin: '5px 0', alignSelf: 'center' }}>
@@ -13,10 +8,11 @@ const MyReactHorizontalCard = ({value, state, setState}) => {
         <span style={{color: '#ffffff', fontSize: 20}}>{value}</span>
       </div>
       <div className="flex items-center justify-end flex-shrink-0 p-2" style={{display: 'flex', justifyContent: 'flex-end', alignItems: 'center', flexShrink: '0', padding: '1rem', height: 'auto' }}>
-        <Button icon="pi pi-times" rounded text raised severity="danger" aria-label="Cancel" onClick={handleClick} style={{backgroundColor: 'red'}}/> {/*onclick will be added here*/}
+        <Button icon="pi pi-times" rounded text raised severity="danger" aria-label="Cancel" onClick={removeTodos} style={{backgroundColor: 'red'}}/> 
       </div>
     </div>
   )
+
 }
 
 export default MyReactHorizontalCard
