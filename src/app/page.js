@@ -1,15 +1,11 @@
 "use client";
 
 import MyCard from "../../Components/MyCard";
-import MyReactYatayCard from "../../Components/MyReactYatayCard";
       
 export default function App() {
-
   return (
-    <div>
-      <h1>Program working</h1>
+    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', margin: '20px 0'}}>
       <MyCard /> 
     </div>
   );
-
 }

@@ -11,7 +11,7 @@ const MyReactHorizontalCard = ({value, removeTodos}) => {
         <Button icon="pi pi-times" rounded text raised severity="danger" aria-label="Cancel" onClick={removeTodos} style={{backgroundColor: 'red'}}/> 
       </div>
     </div>
-  )
+  );
 
 }
 
