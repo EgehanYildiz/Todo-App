@@ -23,7 +23,6 @@ const MyReactHorizontalCard = ({value, removeTodos, editTodos, doneTodos, isBein
       </div>  
     </div>
   );
-
 }
 
 export default MyReactHorizontalCard
