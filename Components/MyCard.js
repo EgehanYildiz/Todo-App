@@ -67,7 +67,7 @@ const MyCard = () => {
   };
 
   return (
-    <div className={isMobile ? 'h-auto w-12' : 'h-auto w-9'}>
+    <div className={isMobile ? 'h-auto w-11' : 'h-auto w-9'}>
       <Card className='border-3 border-solid border-100'>
         <div className="flex align-items-center justify-content-center text-center flex-grow p-0 mb-4">
           <h1>TODO-APP</h1>
