@@ -1,5 +1,4 @@
 TASKS ---> 
-use storage, uselocalstorage ---> bunlara bak
 vercel deploy ---> deploying to cloud ---> gereksiz stiller css dosyaları silinecek --> cuma cloud linki atılsın buğra abiye 
 
 
