@@ -1,25 +1,16 @@
-import IconButton from '@mui/material/IconButton';
-import DeleteIcon from '@mui/icons-material/Delete';
-import DoneIcon from '@mui/icons-material/Done';
-import EditIcon from '@mui/icons-material/Edit';
+import { Button } from 'primereact/button';
 import '../Styles & Animations/animations.css';
 
 const MyReactHorizontalCard = ({value, removeTodos, editTodos, doneTodos, isBeingEdited, toast}) => {
   return (
-    <div className={`flex rounded ${isBeingEdited ? 'flash' : ''}`} style={{ display: 'flex', justifyContent: 'space-between', backgroundColor: 'rgb(32, 38, 46)', border: '1px solid #fafafa', borderRadius: '0.25rem', marginBottom: '10px', alignSelf: 'center' }}>
-      <div className="flex items-center justify-center text-center flex-grow p-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: '1', padding: '1rem' , height: 'auto'}}>
-        <span style={{color: '#ffffff', fontSize: 20}}>{value}</span>
+    <div className={`flex rounded ${isBeingEdited ? 'flash' : ''} align-items-center justify-content-between surface-0 border-1 mb-2 border-solid border-200 border-round-sm`} >
+      <div style={{ wordWrap: 'anywhere', whiteSpace: 'normal' }} className="flex align-items-center justify-content-center text-center flex-grow-1 p-2 h-auto" >
+        <span className='text-white text-1xl'>{value}</span>
       </div>
-      <div className="flex items-center justify-end flex-shrink-0 p-2" style={{display: 'flex', justifyContent: 'flex-end', alignItems: 'center', flexShrink: '0', padding: '1rem', height: 'auto' }}>
-        <IconButton aria-label="edit" opacity-70 onClick={editTodos} size='small' style={{color: 'white'}}>
-          <EditIcon fontSize='medium'/>
-        </IconButton>
-        <IconButton aria-label="done" color="white" opacity-70 onClick={doneTodos} size='small' style={{color: 'blue'}}>
-          <DoneIcon fontSize='medium'/>
-        </IconButton>
-        <IconButton aria-label="delete" color="white" opacity-70 onClick={removeTodos} size='small'>
-          <DeleteIcon fontSize='medium' />
-        </IconButton> 
+      <div className='flex align-items-center justify-content-end flex-shrink-0 p-2 h-3rem'>
+        <Button className='text-white' icon="pi pi-pencil" rounded text onClick={editTodos}/>
+        <Button className='text-white' icon="pi pi-check" rounded text onClick={doneTodos}/>
+        <Button className='text-white' icon="pi pi-trash" rounded text onClick={removeTodos}/>
       </div>  
     </div>
   );

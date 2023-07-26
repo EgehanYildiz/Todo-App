@@ -3,10 +3,11 @@ import { Card } from 'primereact/card';
 import MyReactHorizontalCard from './MyReactHorizontalCard';
 import MySearchBar from './MySearchBar';
 import { Toast } from 'primereact/toast';
+import { useSessionStorage } from 'primereact/hooks';
         
 
 const MyCard = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useSessionStorage([], 'todos');
   const [text, setText] = useState("");
   const [editIndex, setEditIndex] = useState(-1);
   const [labelName, setLabelName] = useState('Add');
@@ -63,11 +64,11 @@ const MyCard = () => {
     setTodos(newArr);
     toast.current.show({severity: 'success', summary: 'Done', detail: 'Task completed successfully.', life: 2000});
   };
-  
+
   return (
-    <div style={{height: '75vh', width: '75vw'}}>
-      <Card style={{border:'3px solid rgb(32, 38, 46)'}}>
-        <div className="flex items-center justify-center text-center flex-grow p-1" style={{borderColor: '#000000', borderBottom: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '5vh', padding: '0px'}}>
+    <div className='h-auto w-9'>
+      <Card className='border-3 border-solid border-100'>
+        <div className="flex align-items-center justify-content-center text-center flex-grow p-0 mb-4">
           <h1>TODO-APP</h1>
         </div>
         <div>

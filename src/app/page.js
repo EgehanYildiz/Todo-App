@@ -4,7 +4,7 @@ import MyCard from "../../Components/MyCard";
       
 export default function App() {
   return (
-    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', margin: '20px 0'}}>
+    <div className='flex justify-content-center align-items-center h-screen mt-4'>
       <MyCard /> 
     </div>
   );

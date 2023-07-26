@@ -1,13 +1,6 @@
-TASKS ---> cuma cloud linki atılsın buğra abiye 
-bir ikon
+TASKS ---> 
 use storage, uselocalstorage ---> bunlara bak
-If you want to write it to the DOM, pass a string instead: opacity-70="true" or opacity-70={value.toString()}.
-14 px = 1 rem ---> primeflexte
-1 rem değişebiliyor
-normalde 1 rem = 16 px
-backgroundColor: 'rgb(32, 38, 46)'
-MySearchBardaki input texti de class yapısına al
-vercel deploy ---> deploying to cloud ---> gereksiz stiller css dosyaları silinecek
+vercel deploy ---> deploying to cloud ---> gereksiz stiller css dosyaları silinecek --> cuma cloud linki atılsın buğra abiye 
 
 
 
