@@ -4,7 +4,7 @@ import { Button } from 'primereact/button';
 
 const MySearchBar = ({labelName, text, setText, addTodos}) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div className='flex justify-content-between align-items-center'>
       <InputText  value={text} onChange={(e) => setText(e.target.value)} 
       className='surface-0 flex-1 border-round-lg mb-3 h-3rem'/>
       <Button label={labelName} onClick={addTodos} 
