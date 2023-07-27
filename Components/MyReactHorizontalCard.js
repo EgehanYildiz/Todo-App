@@ -3,7 +3,7 @@ import '../Styles & Animations/animations.css';
 
 const MyReactHorizontalCard = ({value, removeTodos, editTodos, doneTodos, isBeingEdited, toast}) => {
   return (
-    <div className={`flex rounded ${isBeingEdited ? 'flash' : ''} align-items-center justify-content-between border-1 mb-2 border-solid border-200 border-round-sm`} >
+    <div className={`flex rounded ${isBeingEdited ? 'flash' : ''} align-items-center justify-content-between border-1 mb-2 border-solid border-200 border-round-sm`} style={{backgroundColor: 'rgb(32, 38, 46)'}}>
       <div style={{ wordWrap: 'anywhere', whiteSpace: 'normal' }} className="flex align-items-center justify-content-center text-center flex-grow-1 p-2 h-auto" >
         <span className='text-white text-1xl'>{value}</span>
       </div>
