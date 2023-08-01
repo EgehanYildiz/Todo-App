@@ -13,7 +13,7 @@ const MySearchBar = ({ labelName, text, setText, addTodos }) => {
       <Button
         label={labelName}
         onClick={addTodos}
-        className="text-white ml-1 justify-content-center align-items-center border-round-lg mb-3 border-solid border-1 border-100 surface-0 h-auto md:text-black"
+        className="text-white ml-1 justify-content-center align-items-center border-round-lg mb-3 border-solid border-1 border-100 surface-0 h-auto"
       />
     </div>
   );
